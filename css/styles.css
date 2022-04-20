@@ -1,0 +1,79 @@
+body{
+background-color: hsl(185, 75%, 39%);
+/* learned about how to set multiple background images here */
+background-image: url(https://www.linkpicture.com/q/bg-pattern-top_2.svg),
+url(https://www.linkpicture.com/q/bg-pattern-bottom_1.svg);
+/* major learning moment starts here. Setting the position of each seperate background image the first set of values is applied to the first set then a comma seperates the position values for the next image. */
+background-position: right 45vw bottom 45vh, 45vw 45vh;
+background-repeat: no-repeat;
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+min-height: 100vh;
+overflow: hidden;
+}
+
+h3{
+  font-size: 18px;
+}
+p{
+  color: hsl(0, 0%, 59%);
+  font-size: 14px;
+}
+.container{
+  /* lesson learned: I tried to make everything responsive so I refused to use static dimensions. I didn't think about the provile card not always expanding to the full width of the viewport. */
+  text-align: center;
+  background-color: #faf9f9;
+  width: 320px;
+  height:350px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  margin:0;
+  padding:0;
+}
+
+.name{
+  font-weight: 700;
+}
+
+.age{
+  font-weight: 400;
+  font-size: 18px;
+  color:hsl(0, 0%, 59%)
+}
+
+.profile-pic{
+position: relative;
+top:64%;
+border-radius:50%;
+border: solid 3px white;
+}
+
+.profile-info{
+position: relative;
+top:64%;
+}
+
+.stats{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  position: relative;
+  top: 66%;
+  line-height: .5rem;
+  padding: 1.5rem 0;
+  border-top: solid 1.5px;
+  border-color: lightgray;
+
+}
+
+#background{
+    background-image:url(https://www.linkpicture.com/q/bg-pattern-card_2.svg);
+    height:140px;
+    width:320px;
+    border-radius: 10px 10px 0 0;
+    border-bottom:solid darkgray 1.5px;
+}
