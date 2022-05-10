@@ -16,17 +16,18 @@ overflow: hidden;
 
 h3{
   font-size: 18px;
+  font-weight: bold;
 }
 p{
   color: hsl(0, 0%, 59%);
-  font-size: 14px;
+  font-size: 10px;
 }
 .container{
   /* lesson learned: I tried to make everything responsive so I refused to use static dimensions. I didn't think about the provile card not always expanding to the full width of the viewport. */
   text-align: center;
   background-color: #faf9f9;
   width: 320px;
-  height:350px;
+  height:400px;
   border-radius: 10px;
   display: flex;
   flex-direction: column;
@@ -49,6 +50,7 @@ position: relative;
 top:64%;
 border-radius:50%;
 border: solid 3px white;
+margin-bottom: 1rem;
 }
 
 .profile-info{
@@ -62,7 +64,7 @@ top:64%;
   justify-content: space-evenly;
   align-items: center;
   position: relative;
-  top: 66%;
+  top: 70%;
   line-height: .5rem;
   padding: 1.5rem 0;
   border-top: solid 1.5px;
